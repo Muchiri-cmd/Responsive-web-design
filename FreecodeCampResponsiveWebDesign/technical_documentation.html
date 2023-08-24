@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href='styles.css' rel='stylesheet'/>
+    <title>Python Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Prerequisites">Prerequisites</a></li>
+        <li><a class="nav-link" href="#Python_2.0_and_Python_3.0">Python 2.0 and Python 3.0</a></li>
+        <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Declaring_Variables">Declaring Variables</a></li>
+        <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+        <li><a class="nav-link" href="#Operators">Operators</a></li>
+        <li><a class="nav-link" href="#Lists_and_Tuples">Lists and Tuples</a></li>
+        <li><a class="nav-link" href="#if..else_statement">if..else Statement</a></li>
+        <li><a class="nav-link" href="#While_Statement">While Statement</a></li>
+        <li><a class="nav-link" href="#Function_Declaration">Function Declaration</a></li>
+        <li><a href="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>Python is a widely used general-purpose, high level programming language. It was created by Guido van Rossum in 1991 and further developed by the Python Software Foundation. It was designed with an emphasis on code readability, and its syntax allows programmers to express their concepts in fewer lines of code.Python is versatile, user-friendly and known for its simplicity, readability, and extensive libraries. It supports multiple programming paradigms and finds applications in web development, data analysis, machine learning, and more. With a vibrant community and cross-platform compatibility, Python is an ideal choice for both beginners and experienced developers.
+        </p>
+      </section>
+      <section class="main-section" id="Prerequisites">
+            <header>Prerequisites</header>
+            <p>
+              <ul>
+                <li>Interest and Motivation to learn</li>
+                <li>Basic Computer Skills</li>
+                <li>Basic Computer Knowldedge</li>
+              </ul>
+            </p>
+      </section>
+      <section class="main-section" id="Python_2.0_and_Python_3.0">
+            <header>Python 2.0 and Python 3.0</header>
+            <p>
+              Python 2.0 and Python 3.0 are two major versions of the Python programming language with notable differences.Python 2.0 reached its end-of-life, and developers are encouraged to transition to Python 3.x versions.
+              <p>The key differences between the two are:</p>
+              <ul>
+                <li><span>Print:</span> Python 2.0 uses a print statement, while Python 3.0 uses a print() function</li>
+                <li><span>Division:</span> Python 2.0 performs integer division by default, while Python 3.0 always performs true division</li>
+                <li><span>String Handling:</span> Python 3.0 eliminates the distinction between ASCII and Unicode strings.</li>
+                <li><span>Print Compatibility:</span> Some print statements from Python 2.0 may need modifications to work in Python 3.0.</li>
+                <li><span>Iteration:</span> Python 3.0 introduces a more memory-efficient iteration syntax.</li>
+                <li><span>Function Annotations:</span> Python 3.0 allows attaching metadata to function arguments and return values</li>
+                <li><span>Exception Handling:</span> Python 3.0 modifies the syntax for catching exceptions.
+</li>
+              </ul>
+
+            </p>
+      </section>
+      <section class="main-section" id="Hello_World">
+            <header>Hello World</header>
+            <p>To get started,Open Your favorite text editor or install python on your computer and type python in your command line or in your terminal.Get ready to greet the world in style and type:</p>
+            <div>
+              <code>
+                print("Hello,World!")
+              </code>
+            </div>
+
+            <p>Run the code and watch it unfold in your terminal!</p>
+             
+      </section>
+
+      <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>
+              In Python, variables are named identifiers used to represent values in your code. Identifiers start with a letter or underscore, followed by letters, digits, or underscores. Python is case-sensitive. Unicode characters and escape sequences can be used. Reserved keywords such as if,for,while,def,class are excluded.
+            </p>
+      </section>
+      <section class="main-section" id="Declaring_Variables">
+          <header>Declaring Variables</header>
+          <p>
+            To declare variables in Python, you don't need to explicitly specify their data types. Python uses dynamic typing, which means that variables are assigned values based on the type of data they hold.Python variables can hold different types of values, such as numbers, strings, lists, dictionaries, etc. You don't need to explicitly declare the type; it is inferred based on the assigned value
+            <p>Variable Assignment:
+To declare and assign a value to a variable, use the assignment operator (=).Its similar for constants and variable reassignment For example:</p>
+          <div>
+            <pre>
+              <code>
+                my_variable=10
+                my_variable=20 #Re-assignment
+                PI=3.142 #constant
+              </code>
+            </pre>
+          </div>
+          <p class="bold">NB:The # indicates comments in python.This part is ignored by compiler in code execution.It only acts as a reference for human.</p>
+          <p>Multiple Assignments:
+Python allows you to assign multiple variables in a single line. For example:</p>
+          <div>
+            <code>
+              x=y=z=0
+            </code>
+          </div>
+              <p>Assigning Different Values to Multiple Variables:
+  You can assign different values to multiple variables in a single line. For example:</p>
+          <div>
+            <code>
+              a,b,c=1,2,3
+            </code>
+          </div>
+        </p>
+      </section>
+      <section class="main-section" id="Data_Types">
+          <header>Data Types</header>
+          <p>
+            <p>In Python, there are several data types that are commonly used:</p>
+            <ol>
+              <li><span>Boolean:</span> Represents the truth values True and False</li>
+              <li><span>None:</span> Similar to the null value in other languages, it represents the absence of a value.</li>
+              <li><span>Numeric Types:</span>
+                <ul>
+                  <li><span>Integer:</span> Represents whole numbers, e.g, 42.</li>
+                  <li><span>Float:</span> Represents decimal numbers, e.g, 3.14159.</li>
+                  <li><span>Complex:</span> Represents numbers with a real and imaginary part,e.g, 2 + 3j.</li>
+                </ul>
+              </li>
+              <li><span>String:</span> Represents a sequence of characters enclosed in single quotes ('') or double quotes ("")</li>
+              <li><span>List:</span> Represents an ordered collection of items. Lists can contain elements of different data types and are mutable (modifiable).They are expressed with []</li>
+              <li><span>Tuple:</span> Similar to lists, tuples are ordered collections of items. However, tuples are immutable (unchangeable).They are expressed by ( )</li>
+              <li><span>Set:</span> Represents an unordered collection of unique elements. Sets do not allow duplicate value.Expressed by <code>set()</code></li>
+              <li><span>Dictionary:</span> Represents key-value pairs. Each element in a dictionary consists of a key and its associated value.Expressed by {}</li>
+            </ol>
+          </p>
+      </section>
+      <section class="main-section" id="Operators">
+        <header>Operators</header>
+        <p>
+          <p>In Python, you have various operators that allow you to perform different operations on data. Here are some key operators in Python:</p>
+          <ol>
+            <li>Arithmetic Operators
+              <ul>
+                <li>Addition (+)</li>
+                <li>Subtraction (-)</li>
+                <li>Multiplication (*)</li>
+                <li>Division (/)</li>
+                <li>Floor Division (//)</li>
+                <li>Modulo (%)</li>
+                <li>Exponentiation (**)</li>
+              </ul>
+            </li>  
+            <li>Comparison Operators
+              <ul>
+                <li>Equal to (==)</li>
+                <li>Not equal to (!=)</li>
+                <li>Greater than (>)</li>
+                <li>Less than (<)</li>
+                <li>Greater than or equal to (>=)</li>
+                <li>Less than or equal to (<=)</li>
+              </ul>  
+            </li>  
+            <li>Assignment Operators
+              <ul>
+                <li>Assign (=)</li>
+                <li>Add and assign (+=)</li>
+                <li>Subtract and assign (-=)</li>
+                <li>Multiply and assign (*=)</li>
+                <li>Divide and assign (/=)</li>
+                <li>Modulo and assign (%=)</li>
+                <li>Exponentiation and assign (**=)</li>
+              </ul>
+            </li>  
+            <li>Logical Operators
+              <ul>
+                <li>Logical AND (and)</li>
+                <li>Logical OR (or)</li>
+                <li>Logical NOT (not)</li>
+              </ul>
+            </li>  
+            <li>Bitwise Operators
+              <ul>
+                <li>Bitwise AND (&)</li>
+                <li>Bitwise OR (|)</li>
+                <li>Bitwise XOR (^)</li>
+                <li>Bitwise NOT (~)</li>
+                <li>Left shift (<<)</li>
+                <li>Right shift (>>)</li>
+              </ul>
+            </li>  
+            <li>Membership Operators
+              <ul>
+                <li>in: Returns True if a value is found in a sequence.</li>
+                <li>Not in: Returns True if a value is not found in a sequence.</li>
+              </ul>
+            </li>  
+            <li>Identity Operators
+              <ul>
+                <li><span>is:</span> Returns True if two variables refer to the same object.</li>
+                <li><span>is not:</span> Returns True if two variables do not refer to the same object</li>
+              </ul>
+            </li>  
+            
+          </ol>        
+        </p>
+      </section>
+      <section class="main-section" id="Lists_and_Tuples">
+        <header>Lists and Tuples</header>
+        <p>
+          Lists and tuples are two fundamental data structures in Python. A list is a mutable collection of items enclosed in square brackets, while a tuple is an immutable collection enclosed in parentheses.
+          <p class="underline">Lists:</p>
+          <p>Lists are commonly used when we need to store and modify a collection of elements. For example, consider a list of numbers: </p>
+          <div>
+            <code>numbers=[1,2,3,4,5]</code>
+          </div>
+          We can access individual elements using their index, such as <code>numbers[0]</code> to retrieve the first element. Lists can hold different data types and can be modified by adding or removing elements using methods like <code>append()</code> or <code>remove().</code>
+          <p class="underline">Tuples:</p>
+          <p>On the other hand, tuples are used when we want to store a fixed collection of items that should not be changed.Tuples are useful in situations where data integrity is important, as they cannot be modified once created. Although tuples have fewer methods compared to lists, they can be indexed and sliced similar to lists. For instance, a tuple of coordinates: </p>
+          <div>
+            <code>
+              co-ordinates=(10,20)
+            </code>
+          </div>
+          <p>In summary, lists are mutable, versatile, and suited for dynamic data, while tuples are immutable, used for static data, and offer data protection.
+        </p>
+      </section>
+      <section class="main-section" id="if..else_statement">
+        <header>if..else statement</header>
+        <p>
+          In Python, you can use the if statement to execute a block of code if a logical condition is true. You can also use the optional else clause to execute a different block of code if the condition is false. The syntax for the if statement in Python is as follows:
+          <div>
+            <pre>
+              <code>
+                if condition:
+                  statement_1
+               else:
+                  statement_2
+              </code>
+            </pre>
+          </div>
+          <p>The condition can be any expression that evaluates to True or False. If the condition is True, statement_1 is executed; otherwise, statement_2 is executed. Both statement_1 and statement_2 can be any valid Python statements, including nested if statements.</p>
+          <p>To handle multiple conditions, you can use the elif (short for "else if") keyword. Here's an example:</p>
+          <div>
+            <pre>
+              <code>
+                if condition_1:
+                    statement_1
+                elif condition_2:
+                    statement_2
+                elif condition_n:
+                    statement_n
+                else:
+                    statement_last1
+                    statement_last2
+              </code>
+            </pre>
+          </div>
+          <p>In this case, only the block of code associated with the first True condition will be executed. You can execute multiple statements within a block,using indentation. It's recommended to use indentation consistently and always include a block statement even if there's only one statement</p>
+          <p>It's generally advised not to use simple assignments in conditional expressions, as it can be confusing. Instead, use additional parentheses to make the intention clear. For example:</p>
+          <div>
+            <pre>
+              <code>
+                if (x == y):
+                    # statements here
+              </code>
+            </pre>
+          </div>
+
+        </p>
+      </section>
+      <section class="main-section" id="While_Statement">
+          <header>While Statement</header>
+          <p>
+            In Python, the while statement is used to repeatedly execute a block of code as long as a specified condition is true. Here's how you can rephrase the explanation for Python:
+            <div>
+              <pre>
+                <code>
+                    while condition:
+                        statement
+                </code>
+              </pre>
+            </div>
+            <p>The condition is checked before executing the statement inside the loop. If the condition is true, the statement is executed, and then the condition is checked again. This process continues until the condition becomes false. Once the condition is false, control moves to the statement following the while loop.</p>
+            <p>To execute multiple statements, you can use a block statement (indicated by indentation) to group those statements together.</p>
+            <div>
+              <pre>
+                <code>
+                    n = 0
+                    x = 0
+                    while n < 3:
+                        n += 1
+                        x += n
+                </code>
+              </pre>
+              </div>
+              <p>In each iteration, the loop increments the value of n and adds it to x. After three passes, the loop terminates because the condition n < 3 becomes false. The values of n and x will be as follows:
+
+                After the first pass: n = 1 and x = 1
+                After the second pass: n = 2 and x = 3
+                After the third pass: n = 3 and x = 6
+
+                Once the loop is complete, the execution continues with the statement following the while loop.</p>
+        </p>
+      </section>
+      <section class="main-section" id="Function_Declaration">
+          <header>Function Declaration</header>
+          <p>
+            A function in Python is defined using the def keyword, followed by the function's name and a set of parentheses containing any arguments. The function's statements are written within an indented block. For example, to define a function called square that calculates the square of a number, you can use the following syntax:
+            <div>
+              <pre>
+                <code>
+                  def square(number):
+                    return number * number
+                </code>
+              </pre>
+            </div>
+            <p>In this case, the function takes one argument, number, and the return statement calculates the square of the number and returns the result. When calling the function, you can pass a value to the number parameter, and the function will perform the necessary computations.</p>
+          </p>
+      </section>
+      <section class="main-function" id="Reference">
+        <header>Reference</header>
+        <p >For further reference visit <a class="reference" href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank">geeks for geeks </a></p>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+#navbar>header{
+  font-weight:bold;
+  font-size:25px;
+  margin-right:250px;
+}
+#navbar{
+  position:fixed;
+  left:0;
+  top:0;
+  width:250px;
+  height:100vh;
+}
+
+ #main-doc{
+   margin-left:250px;
+   border-left:1px solid #ccc;
+   padding:20px;
+   font-size:18px;
+ }
+
+#main-doc>section>header{
+  font-weight:bold;
+  font-size:27px;
+  font-family:Helvetica;
+  text-decoration:underline;
+}
+
+#navbar>ul>li{
+  padding:8px;
+  border-bottom:1px solid black;
+  border-top:1px solid black;
+  list-style:none;
+}
+a{
+  text-decoration:none;
+  color:black;
+  font-family:gill sans;
+}
+#main-doc>section>p,li{
+  font-family:sans-serif;
+}
+span{
+  font-weight:bold;
+  font-family:Courier;
+}
+.bold{
+  font-weight:bold;
+}
+.underline{
+  text-decoration:underline;
+  font-weight:bold;
+}
+div{
+  background:#EAEAEA;
+  border-radius:7px;
+  padding:5px;
+  margin:25px 0px 20px 0px;
+  width: 100%;
+  overflow: auto;
+  white-space: pre;
+}
+code{
+  display: block;
+  padding: 10px;
+}
+
+.reference{
+  color:blue;
+}
+
+
+@media (max-width: 767px) and (orientation: landscape) {
+  /* Styles for mobile devices in landscape orientation */
+  #navbar {
+    width: 100px;
+  }
+  #main-doc {
+    margin-left: 100px;
+    font-size: 18px;
+  }
+  #main-doc>section>header {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  /* Styles for mobile devices in portrait orientation */
+  #navbar {
+    display: none;
+  }
+  #main-doc {
+    margin-left: 0;
+    padding: 10px;
+    font-size: 14px;
+  }
+  #main-doc>section>header {
+    font-size: 20px;
+  }
+}
