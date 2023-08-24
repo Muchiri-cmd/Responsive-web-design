@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Code Camp Survey Form</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Survey Form Title -->
+  <h1 id="title">Free Code Camp Survey Form</h1>
+
+  <!-- Description for the survey -->
+  <p id="description">Thank you for taking the time to help us improve the platform.</p>
+
+  <!-- Form Container -->
+  <div class="container">
+    <form id="survey-form" action="/submit-form">
+
+      <!-- Name Field -->
+      <fieldset>
+        <label for="name" id="name-label">Name
+          <input id="name" type="text" name="names" required placeholder="Enter your name">
+        </label>
+      </fieldset>
+
+      <!-- Email Field -->
+      <fieldset>
+        <label for="email" id="email-label">E-mail
+          <input id="email" type="email" name="mail" required placeholder="Enter your email">
+        </label>
+      </fieldset>
+
+      <!-- Age Field -->
+      <fieldset>
+        <label for="number" id="number-label">Age (optional)
+          <input id="number" type="number" name="age" min="12" max="90" placeholder="Enter your age">
+        </label>
+      </fieldset>
+
+      <!-- Role Selection -->
+      <fieldset>
+        <legend>Which option best describes your role?</legend>
+        <select id="dropdown" name="roles">
+          <option disabled selected>(select current role)</option>
+          <option>Student</option>
+          <option>Full Time Job</option>
+          <option>Full Time Learner</option>
+          <option>Prefer Not to Say</option>
+          <option>Other</option>
+        </select>
+      </fieldset>
+
+      <!-- Recommendation Radio Buttons -->
+      <fieldset class="options-fieldset">
+        <legend>Would you recommend FreeCodeCamp to a friend?</legend>
+        <label><input type="radio" name="recommendation" value="definitely"> Definitely</label>
+        <label><input type="radio" name="recommendation" value="maybe"> Maybe</label>
+        <label><input type="radio" name="recommendation" value="unsure"> Not Sure</label>
+      </fieldset>
+
+      <!-- Favorite Feature Selection -->
+      <fieldset>
+        <legend>What is your favorite feature of FreeCodeCamp?</legend>
+        <select name="favorite-feature">
+          <option>(select an option)</option>
+          <option>Challenges</option>
+          <option>Projects</option>
+          <option>Community</option>
+          <option>Open Source</option>
+        </select>
+      </fieldset>
+
+      <!-- Improvement Checkbox Selection -->
+      <fieldset class="options-fieldset">
+        <legend>What would you like to see improved? (Check all that apply)</legend>
+        <label><input type="checkbox" value="Frontend Projects">Front End Projects</label>
+        <label><input type="checkbox" value="Backend Projects">Back End Projects</label>
+        <label><input type="checkbox" value="DataVisualization">Data Visualization</label>
+        <label><input type="checkbox" value="Challenges">Challenges</label>
+        <label><input type="checkbox" value="Community">Open Source Community</label>
+        <label><input type="checkbox" value="HelpRooms">Gitter Help Room</label>
+        <label><input type="checkbox" value="Videos">Videos</label>
+        <label><input type="checkbox" value="Meetups">City Meetups</label>
+        <label><input type="checkbox" value="Wiki">Wiki</label>
+        <label><input type="checkbox" value="Forum">Forum</label>
+        <label><input type="checkbox" value="Additional Courses">Additional Courses</label>
+      </fieldset>
+
+      <!-- Comments Field -->
+      <fieldset>
+        <legend>Any Comments or Suggestions?</legend>
+        <textarea id="comment" placeholder="Enter your comment(s) here"></textarea>
+      </fieldset>
+
+      <!-- Submit Button -->
+      <input type="submit" name="Submit" id="submit">
+
+    </form>
+  </div>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+/* Set background color, font, and size for the entire body */
+body {
+  background-color: hsl(240, 60%, 60%);
+  font-family: sans-serif;
+  font-size: 18px;
+  /* Apply a linear gradient background image */
+  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+}
+
+/* Set the container styles */
+.container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color:#1b1b32; /* Corrected missing # for hex color */
+  max-width: 500px;
+}
+
+/* Set heading styles */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  color: white;
+  font-family: Impact, serif;
+}
+
+/* Set paragraph styles */
+p {
+  font-style: italic;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+/* Remove border and add margins for fieldset */
+fieldset {
+  border: 0;
+  margin: 20px 0;
+}
+
+/* Set label styles */
+label {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  color: white;
+  text-align: left;
+}
+
+/* Set styles for input fields, textarea, and select */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Set legend styles */
+legend {
+  width: 100%;
+  text-align: left;
+  color: white;
+}
+
+/* Set styles for options fieldset */
+.options-fieldset {
+  text-align: left;
+}
+
+/* Set height for textarea */
+textarea {
+  height: 100px;
+}
+
+/* Set styles for submit button */
+input[type="submit"] {
+  width: 80%;
+  background-color: rgb(0, 245, 0);
+  height: 40px;
+  border: none;
+  margin: 10px 25px 30px;
+  cursor:pointer;
+}
+
